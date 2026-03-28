@@ -1,3 +1,5 @@
+import { Header } from "@/widgets/Header"
+
 interface AppProps {
   className?: string
 }
@@ -8,6 +10,7 @@ export const App = (
     <div className={`
       ${className ? className : undefined}
     `}>
+      <Header />
       <div>App</div>
     </div>
   )
