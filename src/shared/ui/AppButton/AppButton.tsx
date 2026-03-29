@@ -1,14 +1,24 @@
-interface AppButtonProps {
+import type { ButtonHTMLAttributes, ReactNode } from "react"
+import cn from "classnames"
+import s from "./AppButton.module.scss"
+
+type AppButtonVariant = "clear"
+type AppButtonColorType = "primary"
+
+interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode
+  variant?: AppButtonVariant
+  colorType?: AppButtonColorType
   className?: string
 }
+
 export const AppButton = (
-  { className }: AppButtonProps
+  { children, variant = "clear", colorType = "primary", className }: AppButtonProps
 ) => {
   return (
-    <div className={`
-      ${className ? className : ""}
-    `}>
-      <div>AppButton</div>
-    </div>
+    <button className={cn(s.appButton, s[variant], s[colorType], className
+    )}>
+      {children}
+    </button>
   )
 }

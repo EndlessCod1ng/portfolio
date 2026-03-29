@@ -6,7 +6,7 @@ const HomePage = (
 ) => {
   return (
     <div className={`
-      ${className ? className : undefined}
+      ${className ? className : ""}
     `}>
       <div>HomePage</div>
     </div>
