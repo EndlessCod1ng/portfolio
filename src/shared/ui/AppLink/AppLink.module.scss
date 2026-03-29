@@ -1,0 +1,14 @@
+.appLink{
+  cursor: pointer;
+
+  &.clear {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: none;
+  }
+  &.primary {
+    color: inherit
+  }
+  
+}

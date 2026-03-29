@@ -1,6 +1,7 @@
 import { routeConfig } from "@/shared/config/routeConfig"
 import s from "./Header.module.scss"
 import { AppLogo } from "@/shared/ui/AppLogo/AppLogo"
+import { AppLink } from "@/shared/ui/AppLink/AppLink"
 
 interface HeaderProps {
   className?: string
@@ -10,8 +11,12 @@ export const Header = (
 ) => {
   return (
     <div className={`${s.header} ${className ? className : ""}`}>
-      {routeConfig.map(r => <div key={r.name}>{r.name}</div>)}
-      <AppLogo />
+      <div>
+        <AppLogo />
+      </div>
+      <nav className={s.nav}>
+        {routeConfig.map(r => <AppLink key={r.name}>{r.name}</AppLink>)}
+      </nav>
     </div>
   )
 }

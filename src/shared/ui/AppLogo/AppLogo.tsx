@@ -1,9 +1,9 @@
-import { AppButton } from "../AppButton/AppButton"
+import { AppLink } from "../AppLink/AppLink"
 
 export const AppLogo = () => {
   return (
-    <AppButton>
+    <AppLink>
       <div>AppLogo</div>
-    </AppButton>
+    </AppLink>
   )
 }
