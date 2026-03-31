@@ -1,10 +1,15 @@
 .header {
+  height: var(--header-height);
+}
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
 }
 
 .nav {
   display: flex;
+  & > *{
+    padding: 10px;
+  }
 }

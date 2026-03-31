@@ -8,7 +8,10 @@
     background: none;
   }
   &.primary {
-    color: inherit
+    color: var(--primary-color)
   }
+  // &.primaryInverted {
+  //   color: var(--primary-color-inverted);
+  // }
   
 }

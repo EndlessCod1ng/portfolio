@@ -4,7 +4,7 @@ import cn from "classnames"
 import s from "./AppLink.module.scss"
 
 type AppLinkVariant = "clear"
-type AppLinkColorType = "primary"
+type AppLinkColorType = "primary" | "primaryInverted"
 
 interface AppLinkProps extends Omit<LinkProps, "to"> {
   children: ReactNode
