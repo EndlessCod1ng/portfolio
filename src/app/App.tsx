@@ -1,4 +1,4 @@
-import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
+import { HomePage } from "@/pages/HomePage"
 import { Header } from "@/widgets/Header"
 import { useState } from "react"
 
@@ -14,9 +14,7 @@ export const App = (
       ${className ? className : ""}
     `}>
       <Header />
-      <AppContainer>
-        <div>App</div>
-      </AppContainer>
+      <HomePage />
     </div>
   )
 }

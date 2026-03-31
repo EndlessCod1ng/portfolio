@@ -1,3 +1,5 @@
+import { Banner } from "@/widgets/Banner/ui/Banner"
+
 interface HomePageProps {
   className?: string
 }
@@ -8,7 +10,8 @@ const HomePage = (
     <div className={`
       ${className ? className : ""}
     `}>
-      <div>HomePage</div>
+      <Banner />
+      <Banner />
     </div>
   )
 }

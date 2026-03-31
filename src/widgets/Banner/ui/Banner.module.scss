@@ -1,0 +1,16 @@
+.banner {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  position: relative;
+  z-index: 0;
+}
+
+.bgAccented {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 100%;
+  background: var(--bg-accented-color);
+  z-index: -1;
+}
