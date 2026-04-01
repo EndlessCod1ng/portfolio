@@ -1,8 +1,19 @@
 :root {
+  // Z-index
+  --header-z-index: 1000;
+  --banner-z-index: 0;
+  --banner-bg-z-index: -1;
+  --banner-content-z-index: -1;
+  --banner-content-bg-z-index: -1;
+  --banner-circle-z-index: -2;
+
+  // Delay
+  --transition-delay: 0.3s;
+
   // Colors
-  --accented-color:rgba(33, 87, 242, 1);
+  --accented-color: rgba(33, 87, 242, 1);
 
   // Sizes
-  --header-height:100px;
-  --container-width:1230px;
+  --header-height: 100px;
+  --container-width: 1230px;
 }

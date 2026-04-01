@@ -7,6 +7,7 @@ import Ae from "@/shared/assets/images/banner/ae.png"
 import Ai from "@/shared/assets/images/banner/ai.png"
 import F from "@/shared/assets/images/banner/f.png"
 import Ps from "@/shared/assets/images/banner/ps.png"
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 interface BannerProps {
   className?: string
 }
@@ -25,11 +26,14 @@ export const Banner = (
       <div className={s.bgAccented}></div>
       <AppContainer className={s.container}>
         <div className={s.content}>
+          <div className={s.contentBg}></div>
           <div className={s.img}></div>
+          <div className={s.circle}></div>
           <div className={s.info}>
-            <h2>123</h2>
-            <h1>456</h1>
-            <p>789</p>
+            {/* <h2>I'm Viacheslav</h2 */}
+            <AppTitle title="I'm Viacheslav" TagName="h2" />
+            <AppTitle title="Frontend Developer" TagName="h1" />
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt.</p>
             <div className={s.btns}>
               <AppLink to='/'>{"See projects"}</AppLink>
               <AppButton>{"See Download Resume"}</AppButton>
@@ -37,7 +41,6 @@ export const Banner = (
           </div>
         </div>
         <div className={s.icons}>
-
           {images.map((image, i) => (<div key={i} className={s.imageWrapper}>
             {image.text}
             <img className={s.image} src={image.img} />

@@ -1,5 +1,6 @@
-.appLink{
+.appLink {
   cursor: pointer;
+  transition: all linear var(--transition-delay);
 
   &.clear {
     outline: none;
@@ -7,11 +8,19 @@
     text-decoration: none;
     background: none;
   }
+
   &.primary {
-    color: var(--primary-color)
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--accented-color);
+    }
+
   }
+
+
   // &.primaryInverted {
   //   color: var(--primary-color-inverted);
   // }
-  
+
 }

@@ -1,7 +1,13 @@
 .app_theme_dark {
+  // Bg
   --bg-color: #222;
   --bg-color-inverted: #fff;
-  --bg-accented-color:rgba(36, 51, 92, 1);
+  --bg-accented-color: rgba(36, 51, 92, 1);
+
+  // Header
+  --header-bg-color: rgb(34, 34, 34, 0, 1);
+
+  // 
   --primary-color: #fff;
   --primary-color-inverted: #222;
 }
