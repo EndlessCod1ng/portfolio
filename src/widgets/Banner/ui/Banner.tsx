@@ -3,11 +3,15 @@ import s from "./Banner.module.scss"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import { AppLink } from "@/shared/ui/AppLink/AppLink"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
+
+
+import Photo from "@/shared/assets/images/banner/photo.jpg"
 import Ae from "@/shared/assets/images/banner/ae.png"
 import Ai from "@/shared/assets/images/banner/ai.png"
 import F from "@/shared/assets/images/banner/f.png"
 import Ps from "@/shared/assets/images/banner/ps.png"
-import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
+
 interface BannerProps {
   className?: string
 }
@@ -23,12 +27,16 @@ export const Banner = (
 ) => {
   return (
     <section className={cn(s.banner, className)}>
-      <div className={s.bgAccented}></div>
-      <AppContainer className={s.container}>
+      <div className={s.bannerBg}></div>
+      <AppContainer>
         <div className={s.content}>
           <div className={s.contentBg}></div>
-          <div className={s.img}></div>
           <div className={s.circle}></div>
+
+          <div className={s.imgWrapper}>
+            <img className={s.img} src={Photo} alt="photo" />
+          </div>
+
           <div className={s.info}>
             {/* <h2>I'm Viacheslav</h2 */}
             <AppTitle title="I'm Viacheslav" TagName="h2" />
@@ -37,13 +45,14 @@ export const Banner = (
             <div className={s.btns}>
               <AppLink to='/'>{"See projects"}</AppLink>
               <AppButton>{"See Download Resume"}</AppButton>
+
             </div>
           </div>
         </div>
         <div className={s.icons}>
-          {images.map((image, i) => (<div key={i} className={s.imageWrapper}>
+          {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
             {image.text}
-            <img className={s.image} src={image.img} />
+            <img className={s.icon} src={image.img} />
           </div>))}
         </div>
       </AppContainer>

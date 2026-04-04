@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.bgAccented {
+.bannerBg {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,27 +17,17 @@
   z-index: var(--banner-bg-z-index);
 }
 
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: space-between;
-}
 
 .content {
   position: relative;
   z-index: var(--banner-content-z-index);
-
   padding: 40px 100px;
   margin-bottom: 70px;
 
   height: 100%;
   padding: 40px 100px;
   display: flex;
-  align-items: stretch;
-
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 60px;
 }
 
@@ -67,34 +57,22 @@
   border: 25px solid var(--bg-accented-color);
 }
 
-.img {
+.imgWrapper {
   content: "";
   width: 400px;
   height: 400px;
   border-radius: 50%;
   background: white;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    bottom: 20px;
-    background: var(--bg-accented-color);
-    z-index: 2;
-  }
-
-  &:before {
-    content: "Image";
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 48%;
-    left: 50%;
-    z-index: 3;
-  }
+.img {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .info {
@@ -106,10 +84,12 @@
 
 .icons {
   display: flex;
+  justify-content: end;
   gap: 13px;
+  width: 100%;
 }
 
-.imageWrapper {
+.iconWrapper {
   background: var(--bg-accented-color);
   width: 160px;
   height: 90px;
@@ -119,11 +99,19 @@
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  margin-right: 0;
 }
 
-.image {
+.icon {
   position: absolute;
   top: -45%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (max-width:1240px) {
+  .img {
+    width: 300px;
+    height: 300px;
+  }
 }

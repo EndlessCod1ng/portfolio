@@ -11,7 +11,6 @@ const HomePage = (
       ${className ? className : ""}
     `}>
       <Banner />
-      <Banner />
     </div>
   )
 }
