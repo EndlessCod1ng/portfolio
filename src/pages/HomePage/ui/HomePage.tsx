@@ -1,4 +1,5 @@
 import { Banner } from "@/widgets/Banner/ui/Banner"
+import { ProjectsList } from "@/widgets/Projects"
 
 interface HomePageProps {
   className?: string
@@ -11,6 +12,7 @@ const HomePage = (
       ${className ? className : ""}
     `}>
       <Banner />
+      <ProjectsList />
     </div>
   )
 }
