@@ -1,7 +1,19 @@
 .appContainer {
   width: 100%;
-  max-width: var(--container-width);
+  min-width: var(--container-width-mobile);
+  max-width: var(--container-width-laptop);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   height: 100%;
+}
+
+@media(min-width:575px) {
+  .appContainer {
+    padding: 0 50px;
+  }
+}
+@media(min-width:768px) {
+  .appContainer {
+    padding: 0 70px;
+  }
 }

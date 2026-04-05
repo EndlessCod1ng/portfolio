@@ -13,22 +13,23 @@ interface HeaderProps {
 export const Header = (
   { className }: HeaderProps
 ) => {
-  const [isVisible, setIsVisible] = useState<boolean>(true)
+  const [isVisible, setIsVisible] = useState<boolean>(false)
 
   return (
     <header className={`${s.header} ${className ? className : ""}`}>
       <AppContainer className={s.container}>
         <AppLogo />
-        
+
         <nav className={s.nav}>
 
-          <AppButton onClick={() => { setIsVisible(!isVisible) }} className={cn(s.burgerWrappe)}>
+          <AppButton onClick={() => { setIsVisible(!isVisible) }} className={cn(s.burgerWrapper, { [s.isVisible]: isVisible })}>
             <span className={s.burger}></span>
           </AppButton>
 
-          <ul className={cn(s.list, { [s.isVisible]: isVisible })}>
-            {routeConfig.map(r => <li>
-              <AppLink key={r.name}>{r.name}</AppLink>
+          <ul
+            className={cn(s.list, { [s.isVisible]: isVisible })}>
+            {routeConfig.map(r => <li key={r.name}>
+              <AppLink onClick={() => { setIsVisible(!isVisible) }}>{r.name}</AppLink>
             </li>)}
           </ul>
 

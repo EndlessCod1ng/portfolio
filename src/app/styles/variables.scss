@@ -3,11 +3,10 @@
   --header-z-index: 1000;
   --header-burger-z-index: 1001;
   --banner-z-index: 0;
-  --banner-bg-z-index: -2;
-  --banner-content-z-index: -1;
-  --banner-content-bg-z-index: -1;
-  --banner-circle-z-index: -3;
-
+  --banner-bg-z-index: -3;
+  --banner-contetn-bg-z-index:-1;
+  --banner-contetn-elements-z-index:-2;
+  
   // Delay
   --transition-delay: 0.3s;
 
@@ -16,5 +15,6 @@
 
   // Sizes
   --header-height: 100px;
-  --container-width: 1440px;
+  --container-width-mobile: 280px;
+  --container-width-laptop: 1440px;
 }

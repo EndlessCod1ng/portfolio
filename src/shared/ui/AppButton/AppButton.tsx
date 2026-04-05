@@ -13,12 +13,12 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const AppButton = (
-  { children, variant = "clear", colorType = "primary", className }: AppButtonProps
+  { children, variant = "clear", colorType = "primary", className, ...otherProps }: AppButtonProps
 ) => {
   return (
-    <button className={cn(s.appButton, s[variant], s[colorType], className
+    <button {...otherProps} className = { cn(s.appButton, s[variant], s[colorType], className
     )}>
-      {children}
-    </button>
+  { children }
+    </button >
   )
 }

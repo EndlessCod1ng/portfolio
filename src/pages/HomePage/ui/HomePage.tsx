@@ -12,6 +12,7 @@ const HomePage = (
       ${className ? className : ""}
     `}>
       <Banner />
+      <Banner />
       <ProjectsList />
     </div>
   )

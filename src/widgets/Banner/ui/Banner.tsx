@@ -28,9 +28,11 @@ export const Banner = (
   return (
     <section className={cn(s.banner, className)}>
       <div className={s.bannerBg}></div>
-      <AppContainer>
+
+      <AppContainer >
         <div className={s.content}>
-          <div className={s.contentBg}></div>
+          <div className={s.bgContent}></div>
+          <div className={s.cross}></div>
           <div className={s.circle}></div>
 
           <div className={s.imgWrapper}>
@@ -49,13 +51,14 @@ export const Banner = (
             </div>
           </div>
         </div>
-        <div className={s.icons}>
-          {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
-            {image.text}
-            <img className={s.icon} src={image.img} />
-          </div>))}
-        </div>
       </AppContainer>
+      <div className={s.icons}>
+        {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
+          {image.text}
+          <img className={s.icon} src={image.img} />
+        </div>))}
+      </div>
+
     </section>
   )
 }

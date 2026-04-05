@@ -20,41 +20,40 @@
 
 .burgerWrapper {
   display: block;
-  width: 40px;
-  height: 60px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: relative;
   z-index: var(--header-burger-z-index);
   cursor: pointer;
+  padding: 30px 10px;
 
-  // &.isVisible {
-  //   .burger {
-  //     background: transparent;
+  &.isVisible {
+    .burger {
+      transition: none;
+      background: transparent;
 
-  //     &:before {
-  //       transition: all linear var(--transition-delay);
-  //       bottom: 0;
-  //       rotate: (45deg);
-  //     }
+      &:before {
+        bottom: 0;
+        rotate: (45deg);
+      }
 
-  //     &:after {
-  //       transition: all linear var(--transition-delay);
-  //       top: 0;
-  //       rotate: (-45deg);
-  //     }
-  //   }
-  // }
+      &:after {
+        top: 0;
+        rotate: (-45deg);
+      }
+    }
+  }
 
 }
 
 .burger {
   content: "";
   position: relative;
+  z-index: var(--header-burger-z-index);
   display: block;
   height: 4px;
   width: 40px;
   background: var(--bg-color-inverted);
+
+  transition: all linear var(--transition-delay);
 
   &:before,
   &::after {
@@ -64,6 +63,7 @@
     width: 40px;
     background: var(--bg-color-inverted);
     left: 0;
+    transition: all linear var(--transition-delay);
   }
 
   &:before {
@@ -76,17 +76,19 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 100vh;
   background: var(--bg-accented-color);
+
+  display: flex;
+  flex-direction: column;
+
   transform: translateY(-100vh);
-  transition: transform linear var(--transition-delay);
-  
+  transition: all linear var(--transition-delay);
+
   &>* {
     padding: 10px;
     width: 100%;
@@ -97,7 +99,11 @@
   }
 }
 
-.isVisible {
-  transition: transform linear var(--transition-delay);
-  // transform: translateY(0);
+.list {
+
+  &.isVisible {
+    display: flex;
+    transition: all linear var(--transition-delay);
+    transform: translateY(0);
+  }
 }

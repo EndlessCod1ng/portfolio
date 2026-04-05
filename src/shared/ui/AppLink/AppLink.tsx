@@ -14,10 +14,10 @@ interface AppLinkProps extends Omit<LinkProps, "to"> {
   className?: string
 }
 export const AppLink = (
-  { children, to = "/", variant = "clear", colorType = "primary", className }: AppLinkProps
+  { children, to = "/", variant = "clear", colorType = "primary", className, ...otherProps }: AppLinkProps
 ) => {
   return (
-    <Link to={to} className={cn(s.appLink, s[variant], s[colorType], className)}>
+    <Link {...otherProps} to={to} className={cn(s.appLink, s[variant], s[colorType], className)}>
       {children}
     </Link>
   )
