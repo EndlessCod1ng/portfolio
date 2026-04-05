@@ -7,21 +7,13 @@ import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 
 
 import Photo from "@/shared/assets/images/banner/photo.jpg"
-import Ae from "@/shared/assets/images/banner/ae.png"
-import Ai from "@/shared/assets/images/banner/ai.png"
-import F from "@/shared/assets/images/banner/f.png"
-import Ps from "@/shared/assets/images/banner/ps.png"
+
 
 interface BannerProps {
   className?: string
 }
 
-const images = [
-  { text: "Photoshop", img: Ps },
-  { text: "After Effects", img: Ae },
-  { text: "Illustrator", img: Ai },
-  { text: "Figma", img: F }
-]
+
 export const Banner = (
   { className }: BannerProps
 ) => {
@@ -52,12 +44,7 @@ export const Banner = (
           </div>
         </div>
       </AppContainer>
-      <div className={s.icons}>
-        {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
-          {image.text}
-          <img className={s.icon} src={image.img} />
-        </div>))}
-      </div>
+    
 
     </section>
   )

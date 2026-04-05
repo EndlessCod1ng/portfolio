@@ -1,0 +1,36 @@
+.stack {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding: 40px;
+
+}
+
+.iconWrapper {
+  background: var(--bg-accented-color);
+  width: 160px;
+  height: 90px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-right: 0;
+}
+
+.icon {
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  transform: translateX(-50%);
+}

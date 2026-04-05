@@ -81,18 +81,6 @@
     border: 25px solid var(--bg-accented-color);
   }
 }
-
-// .contentBg {
-//   position: absolute;
-//   z-index: var(--banner-content-z-index);
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-
-// }
-
-
 .imgWrapper {
   border-radius: 50%;
   border: 10px solid var(--bg-color-inverted);
@@ -113,36 +101,3 @@
 //   max-width: 460px;
 // }
 
-// .icons {
-//   display: flex;
-//   justify-content: end;
-//   gap: 13px;
-//   width: 100%;
-// }
-
-// .iconWrapper {
-//   background: var(--bg-accented-color);
-//   width: 160px;
-//   height: 90px;
-//   border-radius: 24px;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding-top: 20px;
-//   margin-right: 0;
-// }
-
-// .icon {
-//   position: absolute;
-//   top: -45%;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// @media screen and (max-width:1240px) {
-//   .img {
-//     width: 300px;
-//     height: 300px;
-//   }
-// }

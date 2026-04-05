@@ -1,5 +1,6 @@
 import { Banner } from "@/widgets/Banner/ui/Banner"
-import { ProjectsList } from "@/widgets/Projects"
+import { Projects } from "@/widgets/Projects"
+import { Stack } from "@/widgets/Stack"
 
 interface HomePageProps {
   className?: string
@@ -12,8 +13,8 @@ const HomePage = (
       ${className ? className : ""}
     `}>
       <Banner />
-      <Banner />
-      <ProjectsList />
+      <Stack />
+      <Projects />
     </div>
   )
 }
