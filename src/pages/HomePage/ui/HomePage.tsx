@@ -1,3 +1,4 @@
+import { Page } from "@/shared/layouts/Page"
 import { Banner } from "@/widgets/Banner/ui/Banner"
 import { Projects } from "@/widgets/Projects"
 import { Stack } from "@/widgets/Stack"
@@ -9,13 +10,11 @@ const HomePage = (
   { className }: HomePageProps
 ) => {
   return (
-    <div className={`
-      ${className ? className : ""}
-    `}>
+    <Page>
       <Banner />
       <Stack />
       <Projects />
-    </div>
+    </Page>
   )
 }
 export default HomePage

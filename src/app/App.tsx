@@ -1,6 +1,8 @@
 import { HomePage } from "@/pages/HomePage"
+import { routeConfig } from "@/shared/config/routeConfig"
 import { Header } from "@/widgets/Header"
 import { useState } from "react"
+import { Route, Routes } from "react-router"
 
 interface AppProps {
   className?: string
@@ -14,7 +16,11 @@ export const App = (
       ${className ? className : ""}
     `}>
       <Header />
-      <HomePage />
+      <Routes>
+        <Route element={
+          <HomePage />} path="/" />
+        {routeConfig.map(r => (<Route element={r.element} path={r.path} />))}
+      </Routes>
     </div>
   )
 }

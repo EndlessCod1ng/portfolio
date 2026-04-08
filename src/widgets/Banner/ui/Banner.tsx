@@ -13,7 +13,6 @@ interface BannerProps {
   className?: string
 }
 
-
 export const Banner = (
   { className }: BannerProps
 ) => {
