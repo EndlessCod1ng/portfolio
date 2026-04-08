@@ -6,6 +6,7 @@ import s from "./Header.module.scss"
 import { useState } from "react"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import cn from "classnames"
+import { useBodyScrollLock } from "@/shared/hooks/useBodyScrollLock/useBodyScrollLock"
 
 interface HeaderProps {
   className?: string
@@ -14,6 +15,7 @@ export const Header = (
   { className }: HeaderProps
 ) => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
+  useBodyScrollLock(isVisible)
 
   return (
     <header className={`${s.header} ${className ? className : ""}`}>
@@ -22,7 +24,9 @@ export const Header = (
 
         <nav className={s.nav}>
 
-          <AppButton onClick={() => { setIsVisible(!isVisible) }} className={cn(s.burgerWrapper, { [s.isVisible]: isVisible })}>
+          <AppButton onClick={() => {
+            setIsVisible(!isVisible)
+          }} className={cn(s.burgerWrapper, { [s.isVisible]: isVisible })}>
             <span className={s.burger}></span>
           </AppButton>
 

@@ -1,6 +1,5 @@
 .stack {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: var(--sections-indent);
 }
 
 .title {
@@ -9,23 +8,28 @@
 
 .icons {
   display: flex;
+  justify-content: center;
+
   flex-wrap: wrap;
   gap: 13px;
-  padding: 40px;
 
+  padding: 40px 0 0;
 }
 
 .iconWrapper {
   background: var(--bg-accented-color);
-  width: 160px;
+  width: 45%;
   height: 90px;
   border-radius: 24px;
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
   padding-top: 20px;
-  margin-right: 0;
+  margin: 30px 0 0;
 }
 
 .icon {
