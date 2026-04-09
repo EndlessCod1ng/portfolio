@@ -1,9 +1,32 @@
 .appButton {
   cursor: pointer;
+  transition: all linear var(--transition-delay);
   &.clear {
     border: none;
     outline: none;
     background: none;
     color: inherit;
+  }
+  &.filled {
+
+  }
+
+  &.outlined {
+  border: 3px solid var(--button-outlined-color);
+  background: var(--bg-color);
+  color: var(--bg-color-inverted);
+  
+  border-radius: 67px;
+  padding: 14px 30px;
+  width: 90px;height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    transition: all linear var(--transition-delay);
+    border: 3px solid  var(--bg-accented-color);
+    background: var(--bg-accented-color);
+
+  }
   }
 }

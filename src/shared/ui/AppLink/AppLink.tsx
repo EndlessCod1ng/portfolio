@@ -3,7 +3,7 @@ import { Link, type LinkProps, type To } from "react-router"
 import cn from "classnames"
 import s from "./AppLink.module.scss"
 
-type AppLinkVariant = "clear"
+type AppLinkVariant = "clear" | "filled"
 type AppLinkColorType = "primary" | "primaryInverted"
 
 interface AppLinkProps extends Omit<LinkProps, "to"> {

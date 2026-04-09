@@ -1,4 +1,4 @@
-import { Page } from "@/shared/layouts/Page"
+import { Page } from "@/shared/layouts/Page/Page"
 import { Banner } from "@/widgets/Banner/ui/Banner"
 import { Projects } from "@/widgets/Projects"
 import { Stack } from "@/widgets/Stack"
@@ -10,7 +10,7 @@ const HomePage = (
   { className }: HomePageProps
 ) => {
   return (
-    <Page>
+    <Page className={className}>
       <Banner />
       <Stack />
       <Projects />

@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes, ReactNode } from "react"
 import cn from "classnames"
 import s from "./AppButton.module.scss"
 
-type AppButtonVariant = "clear"
+type AppButtonVariant = "clear" | "filled" | "outlined"
 type AppButtonColorType = "primary"
 
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

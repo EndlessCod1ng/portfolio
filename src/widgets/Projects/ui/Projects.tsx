@@ -14,7 +14,9 @@ export const Projects = (
       <AppTitle title={"Projects"} className={s.title} />
 
       <div className={s.btns}>
-        {["All", "React", "Vue", "ModeJs", "NextJs", "NestJs", "Python"].map(t => (<AppButton key={t}>{t}</AppButton>))}
+        {["All", "React", "Vue", "ModeJs", "NextJs", "NestJs",
+          // "Python"
+        ].map(t => (<AppButton variant="outlined" className={s.btn} key={t}>{t}</AppButton>))}
       </div>
 
       <div className={s.projects}>
