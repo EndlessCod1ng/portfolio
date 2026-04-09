@@ -43,7 +43,6 @@
 }
 
 .list {
-
   &.isVisible {
     display: flex;
     transition: all linear var(--transition-delay);
@@ -105,5 +104,18 @@
 
   &::after {
     top: 12px;
+  }
+}
+
+@media (min-width:576px) {
+  .burgerWrapper {
+    display: none;
+  }
+  .list {
+    position: static;
+    height: fit-content;
+    transform: translateY(0);
+    background: none;
+    flex-direction: row;
   }
 }

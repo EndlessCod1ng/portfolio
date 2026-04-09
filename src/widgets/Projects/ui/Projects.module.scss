@@ -1,5 +1,6 @@
 .projects {
   padding-top: var(--sections-indent);
+  padding-bottom: 150px;
 }
 
 .title {
@@ -12,11 +13,44 @@
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 24px;
+  margin-bottom: 40px;
 }
 .btn {
   display: block;
   margin-bottom: 20px;
-  &.accented {
-    
-  }
+}
+
+.projectsList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 393px;
+  min-width: 270px;
+  width: 32%;
+  margin-bottom: 30px;
+  background: url("@/shared/assets/images/projects/project-2.png") 100%/100% no-repeat ;
+  border-radius: 26px;
+}
+
+.info {
+  background:var(--card-bg);
+  border-radius: 0 0 26px 26px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 154px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }

@@ -5,7 +5,6 @@ import { AppLink } from "@/shared/ui/AppLink/AppLink"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 
-
 import Photo from "@/shared/assets/images/banner/photo.jpg"
 
 

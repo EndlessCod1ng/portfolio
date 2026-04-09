@@ -33,7 +33,7 @@ export const Header = (
           <ul
             className={cn(s.list, { [s.isVisible]: isVisible })}>
             {routeConfig.map(r => <li key={r.name}>
-              <AppLink onClick={() => { setIsVisible(!isVisible) }} to={r.path}>{r.name}</AppLink>
+              <AppLink onClick={() => { setIsVisible(false) }} to={r.path}>{r.name}</AppLink>
             </li>)}
           </ul>
 
