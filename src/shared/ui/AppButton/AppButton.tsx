@@ -3,7 +3,7 @@ import cn from "classnames"
 import s from "./AppButton.module.scss"
 
 type AppButtonVariant = "clear" | "filled" | "outlined"
-type AppButtonColorType = "primary"
+type AppButtonColorType = "primary" | "accented"
 
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode

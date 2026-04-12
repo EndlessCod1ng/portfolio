@@ -19,12 +19,12 @@ export const Projects = (
       <div className={s.btns}>
         {["All", "React", "Vue", "ModeJs", "NextJs", "NestJs",
           // "Python"
-        ].map(t => (<AppButton variant="outlined" className={s.btn} key={t}>{t}</AppButton>))}
+        ].map(t => (<AppButton variant="outlined" key={t}>{t}</AppButton>))}
       </div>
 
       <div className={s.projectsList}>
-        {new Array(6).fill({ title: "Portfolio" ,imgUrl:""}).map((p,i) => (
-          <div key={p.title+i} className={s.project}>
+        {new Array(6).fill({ title: "Portfolio", imgUrl: "" }).map((p, i) => (
+          <div key={p.title + i} className={s.project}>
             {/* <img className={s.projectImg} src={ProjectPhoto} alt={"project"} /> */}
             <div className={s.info}>
               <AppTitle TagName="h4" title={p.title} />

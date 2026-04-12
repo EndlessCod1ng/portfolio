@@ -1,0 +1,9 @@
+.appTitle {
+  box-sizing: border-box;
+}
+
+h2 {
+  &.accented {
+    color: var(--accented-color);
+  }
+}

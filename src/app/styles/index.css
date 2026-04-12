@@ -3,6 +3,7 @@
 @import url("./themes/dark.scss");
 @import url("./themes/light.scss");
 
+
 body, .app {
   background: var(--bg-color);
   color: var(--primary-color);

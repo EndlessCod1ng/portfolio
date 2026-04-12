@@ -1,6 +1,8 @@
 .appLink {
+  display: inline-block;
   cursor: pointer;
   transition: all linear var(--transition-delay);
+  text-decoration: none;
 
   &.clear {
     outline: none;
@@ -9,13 +11,25 @@
     background: none;
   }
 
-  &.primary {
+  &.primary.clear {
     color: var(--primary-color);
 
     &:hover {
       color: var(--accented-color);
     }
+  }
 
+  &.primary.filled {
+    border: 3px solid var(--accented-color);
+    color: var(--primary-color);
+    padding: 15px 36px;
+    background: var(--accented-color);
+    border-radius: 20px;
+
+    &:hover {
+      color: var(--accented-color);
+      background: var(--bg-color-inverted);
+    }
   }
 
 

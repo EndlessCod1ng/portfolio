@@ -23,8 +23,6 @@
   align-items: center;
   gap: 20px;
   padding: 20px 30px 60px;
-
-
   position: relative;
 
   .bgContent {
@@ -44,6 +42,7 @@
   }
 
   .cross {
+
     &::before,
     &::after {
       position: absolute;
@@ -80,7 +79,7 @@
 
 .imgWrapper {
   border-radius: 50%;
-  border:10px solid var(--bg-color-inverted);
+  border: 10px solid var(--bg-color-inverted);
   display: inline-block;
 }
 
@@ -92,10 +91,16 @@
   object-fit: cover;
 }
 
-// .info {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   max-width: 460px;
-// }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 460px;
+  gap: 20px;
+}
 
+.btns {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}

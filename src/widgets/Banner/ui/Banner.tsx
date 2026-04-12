@@ -30,19 +30,20 @@ export const Banner = (
           </div>
 
           <div className={s.info}>
-            {/* <h2>I'm Viacheslav</h2 */}
-            <AppTitle title="I'm Viacheslav" TagName="h2" />
+            <AppTitle title="I'm" TagName="h2" />
+            <AppTitle title="Viacheslav" TagName="h2" colorType="accented" />
             <AppTitle title="Frontend Developer" TagName="h1" />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt.</p>
+            <div className={s.text}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt.</div>
             <div className={s.btns}>
-              <AppLink to='/'>{"See projects"}</AppLink>
+              <AppLink variant="filled" to='/'>{"See projects"}</AppLink>
+
               <AppButton>{"See Download Resume"}</AppButton>
 
             </div>
           </div>
         </div>
       </AppContainer>
-    
+
 
     </section>
   )

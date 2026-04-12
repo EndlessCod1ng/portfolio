@@ -7,16 +7,16 @@ import { useState } from "react"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import cn from "classnames"
 import { useBodyScrollLock } from "@/shared/hooks/useBodyScrollLock/useBodyScrollLock"
-import  MoonIcon from "@/shared/assets/images/header/moon.svg?react"
-import  SunIcon from "@/shared/assets/images/header/sun.svg?react"
+import MoonIcon from "@/shared/assets/images/header/moon.svg?react"
+import SunIcon from "@/shared/assets/images/header/sun.svg?react"
 
 interface HeaderProps {
-  theme:"light" | "dark"
-  changeTheme:()=>void
+  theme: "light" | "dark"
+  changeTheme: () => void
   className?: string
 }
 export const Header = (
-  { theme,changeTheme, className }: HeaderProps
+  { theme, changeTheme, className }: HeaderProps
 ) => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
   useBodyScrollLock(isVisible)
@@ -43,13 +43,13 @@ export const Header = (
           </nav>
           <AppButton onClick={changeTheme}>
             {theme === "dark" ?
-            <SunIcon className={s.themeIcon} />
+              <SunIcon className={s.themeIcon} />
               :
-            <MoonIcon  className={s.themeIcon} />
-          }
+              <MoonIcon className={s.themeIcon} />
+            }
           </AppButton>
         </div>
-        
+
       </AppContainer>
     </header >
   )
