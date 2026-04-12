@@ -11,11 +11,14 @@ export const App = (
   { className }: AppProps
 ) => {
   const [theme, setTheme] = useState<"light" | "dark">("dark")
+  const changeTheme = () => {
+    setTheme(theme==="dark"?"light":"dark")
+  }
   return (
     <div className={`app app_theme_${theme}
       ${className ? className : ""}
     `}>
-      <Header />
+      <Header theme={theme} changeTheme={changeTheme} />
       <Routes>
         <Route element={
           <HomePage />} path="/" />
