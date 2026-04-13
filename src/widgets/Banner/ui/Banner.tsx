@@ -30,8 +30,10 @@ export const Banner = (
           </div>
 
           <div className={s.info}>
-            <AppTitle title="I'm" TagName="h2" />
-            <AppTitle title="Viacheslav" TagName="h2" colorType="accented" />
+            <div className={s.name}>
+              <AppTitle title="I'm" TagName="h2" />
+              <AppTitle title="Viacheslav" TagName="h2" colorType="accented" />
+            </div>
             <AppTitle title="Frontend Developer" TagName="h1" />
             <div className={s.text}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt.</div>
             <div className={s.btns}>

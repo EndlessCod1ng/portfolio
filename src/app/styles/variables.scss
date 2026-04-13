@@ -1,6 +1,40 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../shared/assets/fonts/Roboto-VariableFont_wdth_wght.woff2') format('woff2-supports-variations'),
+    url('../../shared/assets/fonts/Roboto-VariableFont_wdth_wght.woff2') format('woff2');
+
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  // Z-index
-  --header-z-index: 1000;
+  // Fonts
+    --font-family-main: "Roboto", sans-serif;
+    
+    /* XXL: 60px -> 36px */
+    --fs-xxl: clamp(36px, 2.14vw + 29.1px, 60px);
+    /* XL: 48px -> 30px */
+    --fs-xl: clamp(30px, 1.61vw + 24.8px, 48px);
+    /* LG: 32px -> 24px */
+    --fs-lg: clamp(24px, 0.71vw + 21.7px, 32px);
+    /* MD: 20px -> 18px */
+    --fs-md: clamp(18px, 0.18vw + 17.4px, 20px);
+    /* SM: 16px -> 15px */
+    --fs-sm: clamp(15px, 0.09vw + 14.7px, 16px);
+    /* XS: 14px */
+    --fs-xs: 14px;
+
+    --font-xxl: 700 var(--fs-xxl)/1.1 var(--font-family-main);
+    --font-xl: 700 var(--fs-xl)/1.15 var(--font-family-main);
+    --font-lg: 700 var(--fs-lg)/1.2 var(--font-family-main);
+    --font-md: 500 var(--fs-md)/1.4 var(--font-family-main);
+    --font-sm: 400 var(--fs-sm)/1.5 var(--font-family-main);
+    --font-xs: 400 var(--fs-xs)/1.5 var(--font-family-main);
+  
+   // Z-index
+    --header-z-index: 1000;
   --header-burger-z-index: 1001;
   --banner-z-index: 0;
   --banner-bg-z-index: -3;

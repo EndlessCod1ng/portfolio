@@ -4,9 +4,11 @@
 @import url("./themes/light.scss");
 
 
+
 body, .app {
   background: var(--bg-color);
   color: var(--primary-color);
   width: 100%;
   min-height: 100vh;
+  font: var(--font-sm);
 }
