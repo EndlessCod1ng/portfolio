@@ -2,8 +2,22 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font: var(--font-xl);
+}
+
 h2 {
+  font: var(--font-xxl);
+
   &.accented {
     color: var(--accented-color);
   }
+}
+
+h3 {
+  font: var(--font-lg);
+}
+
+h4 {
+  font: var(--font-md);
 }

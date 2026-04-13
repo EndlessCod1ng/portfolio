@@ -3,6 +3,7 @@
   cursor: pointer;
   transition: all linear var(--transition-delay);
   text-decoration: none;
+  font: var(--font-sm);
 
   &.clear {
     outline: none;

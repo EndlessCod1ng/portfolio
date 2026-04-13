@@ -6,6 +6,7 @@ import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 
 import Photo from "@/shared/assets/images/banner/photo.jpg"
+import { AppText } from "@/shared/ui/AppText/AppText"
 
 
 interface BannerProps {
@@ -35,7 +36,7 @@ export const Banner = (
               <AppTitle title="Viacheslav" TagName="h2" colorType="accented" />
             </div>
             <AppTitle title="Frontend Developer" TagName="h1" />
-            <div className={s.text}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt.</div>
+            <AppText TagName="p" text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt." />
             <div className={s.btns}>
               <AppLink variant="filled" to='/'>{"See projects"}</AppLink>
 

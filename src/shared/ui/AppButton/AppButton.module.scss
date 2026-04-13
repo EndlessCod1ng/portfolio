@@ -1,27 +1,42 @@
 .appButton {
   cursor: pointer;
   transition: all linear var(--transition-delay);
+  font: var(--font-sm);
+
 
   &.primary.clear {
     outline: none;
     border: none;
     background: none;
     color: inherit;
+    &:hover {
+      color: var(--accented-color);
+    }
   }
 
   &.primary.filled {
+    border: 3px solid var(--accented-color);
+    color: var(--primary-color);
     padding: 15px 36px;
+    background: var(--accented-color);
+    border-radius: 20px;
+
+    &:hover {
+      color: var(--accented-color);
+      background: var(--bg-color-inverted);
+    }
   }
 
   &.primary.outlined {
+    font: var(--font-md);
+
     border: 3px solid var(--button-outlined-color);
     background: var(--bg-color);
     color: var(--bg-color-inverted);
 
     border-radius: 67px;
-    padding: 14px 30px;
-    width: 90px;
-    height: 25px;
+    width: 120px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;

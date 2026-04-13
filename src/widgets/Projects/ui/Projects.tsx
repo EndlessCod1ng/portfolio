@@ -29,7 +29,7 @@ export const Projects = (
             <div className={s.info}>
               <AppTitle TagName="h4" title={p.title} />
               <div className={s.links}>
-                <AppButton>{"Live Preview"}</AppButton>
+                <AppButton variant="filled">{"Live Preview"}</AppButton>
                 <AppButton>{"View Code"}</AppButton>
               </div>
             </div>

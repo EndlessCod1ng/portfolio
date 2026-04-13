@@ -24,7 +24,7 @@ export const Stack = (
       <AppTitle title={"Stack"} className={s.title} />
       <div className={s.icons}>
         {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
-          {image.text}
+          <AppTitle TagName="h4" title={image.text} />
           <img className={s.icon} src={image.img} />
         </div>))}
       </div>
