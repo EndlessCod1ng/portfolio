@@ -11,4 +11,5 @@ body, .app {
   width: 100%;
   min-height: 100vh;
   font: var(--font-xs);
+  min-width: var(--min-width);
 }

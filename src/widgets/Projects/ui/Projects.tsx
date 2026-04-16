@@ -3,12 +3,14 @@ import s from "./Projects.module.scss"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
+
 // import ProjectPhoto from "@/shared/assets/images/projects/project-2.png"
 
 
 interface ProjectsProps {
   className?: string
 }
+
 export const Projects = (
   { className }: ProjectsProps
 ) => {
@@ -22,7 +24,10 @@ export const Projects = (
         ].map(t => (<AppButton variant="outlined" key={t}>{t}</AppButton>))}
       </div>
 
+
       <div className={s.projectsList}>
+
+
         {new Array(6).fill({ title: "Portfolio", imgUrl: "" }).map((p, i) => (
           <div key={p.title + i} className={s.project}>
             {/* <img className={s.projectImg} src={ProjectPhoto} alt={"project"} /> */}

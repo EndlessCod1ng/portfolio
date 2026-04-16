@@ -39,8 +39,8 @@
   --header-burger-z-index: 1001;
   --banner-z-index: 0;
   --banner-bg-z-index: -3;
-  --banner-contetn-bg-z-index: -1;
-  --banner-contetn-elements-z-index: -2;
+  --banner-content-bg-z-index: -1;
+  --banner-content-elements-z-index: -2;
 
   // Delay
   --transition-delay: 0.3s;
@@ -54,4 +54,13 @@
   --container-width-laptop: 1440px;
 
   --sections-indent: 50px;
+
+  // @Media
+  // --wide: 1440px;
+  // --desctop: 1240px;
+  // --laptop: 1024px; //992px
+  // --tablet: 768px;
+  // --mobile: 575px;
+
+  --min-width: 320px;
 }

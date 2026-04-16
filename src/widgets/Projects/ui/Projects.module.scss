@@ -13,15 +13,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 24px;
+  margin: 0 auto;
+  gap: 20px;
   margin-bottom: 40px;
 }
 
 
 .projectsList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .project {
@@ -30,7 +32,7 @@
   justify-content: center;
   height: 393px;
   min-width: 270px;
-  width: 32%;
+  width: 80%;
   margin-bottom: 30px;
   background: url("@/shared/assets/images/projects/project-2.png") 100%/100% no-repeat;
   border-radius: 26px;
@@ -51,4 +53,10 @@
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+@media(min-width:575px) {
+  .btns {
+    max-width: 475px;
+  }
 }
