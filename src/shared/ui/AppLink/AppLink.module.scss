@@ -24,9 +24,17 @@
   &.primary.filled {
     border: 3px solid var(--accented-color);
     color: var(--primary-color);
-    padding: 15px 36px;
     background: var(--accented-color);
-    border-radius: 20px;
+    
+    &.m {
+      padding: 15px 36px;
+      border-radius: 20px;
+    }
+    
+    &.s {
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
 
     &:hover {
       color: var(--accented-color);
