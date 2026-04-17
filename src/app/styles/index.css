@@ -8,8 +8,10 @@
 body, .app {
   background: var(--bg-color);
   color: var(--primary-color);
-  width: 100%;
-  min-height: 100vh;
+  
   font: var(--font-xs);
+
+  min-height: 100vh;
   min-width: var(--min-width);
+  width: 100%;
 }

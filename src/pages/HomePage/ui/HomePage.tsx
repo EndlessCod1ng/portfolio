@@ -1,5 +1,6 @@
 import { Page } from "@/shared/layouts/Page/Page"
 import { Banner } from "@/widgets/Banner/ui/Banner"
+import { Contacts } from "@/widgets/Contacts"
 import { Projects } from "@/widgets/Projects"
 import { Stack } from "@/widgets/Stack"
 
@@ -14,6 +15,7 @@ const HomePage = (
       <Banner />
       <Stack />
       <Projects />
+      <Contacts />
     </Page>
   )
 }

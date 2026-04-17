@@ -1,6 +1,6 @@
 import { HomePage } from "@/pages/HomePage"
 import { routeConfig } from "@/shared/config/routeConfig"
-import { Footer } from "@/widgets/Footer/Footer"
+import { Footer } from "@/widgets/Footer/ui/Footer"
 import { Header } from "@/widgets/Header"
 import { useState } from "react"
 import { Route, Routes } from "react-router"

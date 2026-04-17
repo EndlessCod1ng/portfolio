@@ -3,7 +3,7 @@
   min-width: var(--container-width-mobile);
   max-width: var(--container-width-laptop);
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 var(--container-indent);
   height: 100%;
 }
 
@@ -12,6 +12,7 @@
     padding: 0 50px;
   }
 }
+
 @media(min-width:768px) {
   .appContainer {
     padding: 0 70px;
