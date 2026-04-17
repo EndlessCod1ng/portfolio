@@ -1,0 +1,23 @@
+.appInput {
+  background: var(--field-bg);
+  padding: 10px 30px;
+  border-radius: 9px;
+  outline: none;
+  border: 2px solid transparent;
+  min-width: 120px;
+  width: 100%;
+
+  color: var(--primary-color);
+
+  &::placeholder {
+    color: var(--secondary-color);
+  }
+
+  &:hover {
+    border: 2px solid var(--bg-color-accented);
+  }
+
+  &:focus {
+    border: 2px solid var(--accented-color);
+  }
+}

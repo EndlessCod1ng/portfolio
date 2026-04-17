@@ -18,9 +18,10 @@
   &.primary.filled {
     border: 3px solid var(--accented-color);
     color: var(--primary-color);
-    padding: 15px 36px;
     background: var(--accented-color);
-    border-radius: 20px;
+
+    padding: 4px 24px;
+    border-radius: 7px;
 
     &:hover {
       color: var(--accented-color);
@@ -44,8 +45,8 @@
 
     &:hover {
       transition: all linear var(--transition-delay);
-      border: 3px solid var(--bg-accented-color);
-      background: var(--bg-accented-color);
+      border: 3px solid var(--bg-color-accented);
+      background: var(--bg-color-accented);
     }
   }
 }

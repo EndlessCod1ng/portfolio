@@ -1,17 +1,19 @@
 .app_theme_light {
   // Bg
-  --bg-color: #ddd;
+  --bg-color: #fff;
   --bg-color-inverted: #222;
-  --bg-accented-color: rgba(166, 188, 250, 1);
-  
+  --bg-color-accented: rgba(166, 188, 250, 1);
+
   // Header
-  --header-bg-color: rgb(255, 255, 255, 0.8);
-  
+  --header-bg-color: rgb(255, 255, 255, 0.6);
+
   // 
-  ---primary-color: #222;
+  --primary-color: #222;
+  --secondary-color: #999;
   --primary-color-inverted: #fff;
   --accented-color: rgba(33, 87, 242, 1);
 
-  --button-outlined-color:  rgba(166, 188, 250, 1);
+  --button-outlined-color: rgba(166, 188, 250, 1);
   --card-bg: #eee;
+  --field-bg: #f0f0f0;
 }

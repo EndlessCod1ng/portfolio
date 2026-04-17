@@ -7,8 +7,22 @@
   min-width: 260px;
   max-width: 430px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title {
   text-align: center;
+}
+
+.topLine {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  min-width: 100px;
+  width: fit-content;
+  border-radius: 5px;
 }
