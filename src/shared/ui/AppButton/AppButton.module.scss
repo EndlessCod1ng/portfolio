@@ -21,7 +21,7 @@
     background: var(--accented-color);
 
     padding: 4px 24px;
-    border-radius: 7px;
+    border-radius: var(--border-radius-s);
 
     &:hover {
       color: var(--accented-color);
@@ -36,7 +36,7 @@
     background: var(--bg-color);
     color: var(--bg-color-inverted);
 
-    border-radius: 67px;
+    border-radius: var(--border-radius-l);
     width: 120px;
     height: 42px;
     display: flex;

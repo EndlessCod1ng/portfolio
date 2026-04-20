@@ -2,14 +2,25 @@
   padding: var(--sections-indent) 0;
 }
 
-.content {
-  // border: 1px solid red;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.form {
+
   min-width: 260px;
   max-width: 430px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  // box-shadow: 8px 8px 34px 0px var(--card-bg);
+  // padding: 50px;
+  border-radius: var(--border-radius-xs);
 }
 
 .title {
@@ -24,5 +35,27 @@
 .btn {
   min-width: 100px;
   width: fit-content;
-  border-radius: 5px;
+}
+
+.info {
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.icon {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-color: var(--bg-color-accented);
 }

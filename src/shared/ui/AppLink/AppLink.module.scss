@@ -25,20 +25,20 @@
     border: 3px solid var(--accented-color);
     color: var(--primary-color);
     background: var(--accented-color);
-    
+
     &.m {
       padding: 15px 36px;
-      border-radius: 20px;
+      border-radius: var(--border-radius-s);
     }
-    
+
     &.s {
       padding: 5px 10px;
-      border-radius: 10px;
+      border-radius: var(--border-radius-xs);
     }
 
     &:hover {
       color: var(--accented-color);
-      background: var(--bg-color-inverted);
+      background: var(--bg-color);
     }
   }
 

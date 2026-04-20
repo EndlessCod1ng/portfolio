@@ -3,18 +3,18 @@
   min-width: var(--container-width-mobile);
   max-width: var(--container-width-laptop);
   margin: 0 auto;
-  padding: 0 var(--container-indent);
+  padding: 0 var(--container-indent-s);
   height: 100%;
 }
 
 @media(min-width:575px) {
   .appContainer {
-    padding: 0 50px;
+    padding: 0 var(--container-indent-m);
   }
 }
 
 @media(min-width:768px) {
   .appContainer {
-    padding: 0 70px;
+    padding: 0 var(--container-indent-l);
   }
 }

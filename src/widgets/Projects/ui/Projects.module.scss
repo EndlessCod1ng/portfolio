@@ -33,13 +33,13 @@
   width: 100%;
   margin-bottom: 30px;
   background: url("@/shared/assets/images/projects/project-2.png") 100%/100% no-repeat;
-  border-radius: 26px;
+  border-radius: var(--border-radius-m);
 }
 
 .info {
   min-height: 154px;
   background: var(--card-bg);
-  border-radius: 0 0 24px 24px;
+  border-radius: 0 0 var(--border-radius-m) var(--border-radius-m);
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -15,7 +15,6 @@
 
   /* XXL: 60px -> 36px */
   --font-size-xxl: clamp(36px, 2.14vw + 29.1px, 60px);
-  --font-size-xxl: clamp(36px, 2.14vw + 29.1px, 60px);
   /* XL: 48px -> 30px */
   --font-size-xl: clamp(30px, 1.61vw + 24.8px, 48px);
   /* LG: 32px -> 24px */
@@ -54,7 +53,20 @@
   --container-width-laptop: 1440px;
 
   --sections-indent: 50px;
-  --container-indent: 30px;
+  --container-indent-s: 30px;
+  --container-indent-m: 50px;
+  --container-indent-l: 70px;
+
+  //Radius
+  --border-radius-xs: 10px;
+  --border-radius-s: 20px;
+  --border-radius-m: 24px;
+
+  --border-radius-l: 67px;
+  --border-radius-xl: 100px;
+  // --border-radius-xxl: 200px;
+  // --border-radius-xl: clamp(36px, 2.14vw + 29.1px, 60px);;
+  // --border-radius-xxl: clamp(36px, 2.14vw + 29.1px, 60px);;
 
   // @Media
   // --wide: 1440px;
