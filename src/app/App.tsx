@@ -2,6 +2,7 @@ import { HomePage } from "@/pages/HomePage"
 import { routeConfig } from "@/shared/config/routeConfig"
 import { Footer } from "@/widgets/Footer/ui/Footer"
 import { Header } from "@/widgets/Header"
+import { Socials } from "@/widgets/Socials"
 import { useState } from "react"
 import { Route, Routes } from "react-router"
 
@@ -19,6 +20,7 @@ export const App = (
     <div className={`app app_theme_${theme}
       ${className ? className : ""}
     `}>
+      <Socials />
       <Header theme={theme} changeTheme={changeTheme} />
 
       <main>

@@ -12,10 +12,15 @@ export const Footer = (
     <footer className={cn(s.footer, className)}>
       {/* <div className={s["wave-box"]}></div> */}
 
-      <AppText text={`Coded by Viacheslav Ivanov`} />
+      <div className={s.socials}>
+        {Array(3).fill(null).map((item, i) => (<div key={i} className={s.item}>{item}</div >))}
+      </div>
+      <div className={s.info}>
+        <AppText text={`Coded by Viacheslav Ivanov`} />
 
-      <AppText text={`All Rights Reserved ${new Date().getFullYear()}`
-      } />
+        <AppText text={`All Rights Reserved ${new Date().getFullYear()}`
+        } />
+      </div>
 
     </footer >
   )

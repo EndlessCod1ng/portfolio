@@ -1,0 +1,26 @@
+.socials {
+
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 20px;
+  background: var(--accented-color);
+  width: 60px;
+  height: 200px;
+  border-radius: 0 var(--border-radius-m) var(--border-radius-m) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+.item {
+  content: "";
+  width: 33px;
+  height: 33px;
+  background: var(--bg-color-accented);
+  border-radius: 50%;
+}

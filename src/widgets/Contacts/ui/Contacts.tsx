@@ -13,7 +13,7 @@ export const Contacts = (
 ) => {
   return (
     <section className={cn(s.contacts, className)}>
-        <AppTitle className={s.title} title={"Contacts"} />
+      <AppTitle className={s.title} title={"Contacts"} />
       <AppContainer className={s.container}>
         <form className={s.form}>
           <AppTitle TagName="h4" title={"Get in touch"} />
@@ -30,9 +30,9 @@ export const Contacts = (
             [
               { icon: "", title: "Location", text: "USA/Sacramento" },
               { icon: "", title: "Phone", text: "+989150063913" },
-              { icon: "", title: "+Email", text: "endlesscoding@yahoo.com" },
+              { icon: "", title: "Email", text: "endlesscoding@yahoo.com" },
 
-            ].map(infoItem => (<div className={s.item}>
+            ].map(infoItem => (<div key={infoItem.title} className={s.item}>
               <div className={s.icon}>{infoItem.icon}</div>
               <div className={s.text}>
                 <AppTitle TagName="h4" title={infoItem.title} />
