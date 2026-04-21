@@ -1,3 +1,5 @@
+import Instagram from "@/shared/assets/images/socials/instagram.svg?react"
+
 import cn from "classnames"
 import s from "./Socials.module.scss"
 interface SocialsProps {

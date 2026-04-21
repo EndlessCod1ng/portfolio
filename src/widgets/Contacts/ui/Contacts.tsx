@@ -1,15 +1,16 @@
-import cn from "classnames"
-import s from "./Contacts.module.scss"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 import { AppInput } from "@/shared/ui/AppInput/AppInput"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppText } from "@/shared/ui/AppText/AppText"
+import { AppIcon } from "@/shared/ui/AppIcon/AppIcon"
 
 import Location from "@/shared/assets/images/contacts/location.svg?react"
 import Phone from "@/shared/assets/images/contacts/phone.svg?react"
 import Email from "@/shared/assets/images/contacts/email.svg?react"
-import { AppIcon } from "@/shared/ui/AppIcon/AppIcon"
+
+import cn from "classnames"
+import s from "./Contacts.module.scss"
 
 interface ContactsProps {
   className?: string
