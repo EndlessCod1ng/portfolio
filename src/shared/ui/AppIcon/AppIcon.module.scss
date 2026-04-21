@@ -1,0 +1,9 @@
+.appIcon {
+  width: 44px;
+  height: 44px;
+
+  &.accented {
+    fill: var(--accented-color);
+
+  }
+}

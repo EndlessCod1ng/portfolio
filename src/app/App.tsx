@@ -20,8 +20,8 @@ export const App = (
     <div className={`app app_theme_${theme}
       ${className ? className : ""}
     `}>
-      <Socials />
       <Header theme={theme} changeTheme={changeTheme} />
+      <Socials />
 
       <main>
         <Routes>

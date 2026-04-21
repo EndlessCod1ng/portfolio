@@ -5,6 +5,12 @@ import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 import { AppInput } from "@/shared/ui/AppInput/AppInput"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppText } from "@/shared/ui/AppText/AppText"
+
+import Location from "@/shared/assets/images/contacts/location.svg?react"
+import Phone from "@/shared/assets/images/contacts/phone.svg?react"
+import Email from "@/shared/assets/images/contacts/email.svg?react"
+import { AppIcon } from "@/shared/ui/AppIcon/AppIcon"
+
 interface ContactsProps {
   className?: string
 }
@@ -28,12 +34,12 @@ export const Contacts = (
         <div className={s.info}>
           {
             [
-              { icon: "", title: "Location", text: "USA/Sacramento" },
-              { icon: "", title: "Phone", text: "+989150063913" },
-              { icon: "", title: "Email", text: "endlesscoding@yahoo.com" },
+              { icon: Location, title: "Location", text: "USA/Sacramento" },
+              { icon: Phone, title: "Phone", text: "+989150063913" },
+              { icon: Email, title: "Email", text: "endlesscoding@yahoo.com" },
 
             ].map(infoItem => (<div key={infoItem.title} className={s.item}>
-              <div className={s.icon}>{infoItem.icon}</div>
+              <AppIcon Svg={infoItem.icon} />
               <div className={s.text}>
                 <AppTitle TagName="h4" title={infoItem.title} />
                 <AppText text={infoItem.text} />
