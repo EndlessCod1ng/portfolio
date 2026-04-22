@@ -9,15 +9,15 @@ import cn from "classnames"
 import { useBodyScrollLock } from "@/shared/hooks/useBodyScrollLock/useBodyScrollLock"
 import MoonIcon from "@/shared/assets/images/header/moon.svg?react"
 import SunIcon from "@/shared/assets/images/header/sun.svg?react"
+import { useTheme } from "@/app/providers/ThemeProvider"
 
 interface HeaderProps {
-  theme: "light" | "dark"
-  changeTheme: () => void
   className?: string
 }
 export const Header = (
-  { theme, changeTheme, className }: HeaderProps
+  { className }: HeaderProps
 ) => {
+  const { theme, changeTheme } = useTheme();
   const [isVisible, setIsVisible] = useState<boolean>(false)
   useBodyScrollLock(isVisible)
 

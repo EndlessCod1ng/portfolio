@@ -3,8 +3,9 @@ import { routeConfig } from "@/shared/config/routeConfig"
 import { Footer } from "@/widgets/Footer/ui/Footer"
 import { Header } from "@/widgets/Header"
 import { Socials } from "@/widgets/Socials"
-import { useState } from "react"
 import { Route, Routes } from "react-router"
+
+import { useTheme } from "./providers/ThemeProvider"
 
 interface AppProps {
   className?: string
@@ -12,15 +13,12 @@ interface AppProps {
 export const App = (
   { className }: AppProps
 ) => {
-  const [theme, setTheme] = useState<"light" | "dark">("dark")
-  const changeTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
-  }
+  const { theme } = useTheme();
   return (
     <div className={`app app_theme_${theme}
       ${className ? className : ""}
     `}>
-      <Header theme={theme} changeTheme={changeTheme} />
+      <Header />
       <Socials />
 
       <main>

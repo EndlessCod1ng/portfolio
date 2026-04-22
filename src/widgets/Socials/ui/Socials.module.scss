@@ -18,14 +18,6 @@
 }
 
 
-.item {
-  content: "";
-  width: 28px;
-  height: 28px;
-  background: var(--bg-color-accented);
-  border-radius: 50%;
-}
-
 @media (min-width:768px) {
   .socials {
     width: 60px;
@@ -33,11 +25,7 @@
     gap: 20px;
     border-radius: 0 var(--border-radius-m) var(--border-radius-m) 0;
   }
-
-  .item {
-    width: 33px;
-    height: 33px;
-  }
+  
 }
 
 
