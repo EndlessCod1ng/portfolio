@@ -2,7 +2,7 @@ import { HomePage } from "@/pages/HomePage";
 import { ProjectsPage } from "@/pages/ProjectsPage";
 import type { ReactNode } from "react";
 
-export type PathType = "/" | "/projects"
+export type PathType = "/" | "/projects" | string
 
 export const routeConfig: Array<{ name: string, path: PathType, element: ReactNode }> = [
   { name: "Home", path: "/", element: <HomePage /> },

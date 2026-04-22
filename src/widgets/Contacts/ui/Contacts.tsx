@@ -40,7 +40,10 @@ export const Contacts = (
               { icon: Email, title: "Email", text: "endlesscoding@yahoo.com" },
 
             ].map(infoItem => (<div key={infoItem.title} className={s.item}>
-              <AppIcon Svg={infoItem.icon} />
+              <AppIcon Svg={infoItem.icon} size="l"
+                colorType="accented"
+    
+              />
               <div className={s.text}>
                 <AppTitle TagName="h4" title={infoItem.title} />
                 <AppText text={infoItem.text} />

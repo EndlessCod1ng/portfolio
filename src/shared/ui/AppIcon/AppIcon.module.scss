@@ -1,9 +1,30 @@
 .appIcon {
-  width: 44px;
-  height: 44px;
+  transition: all linear var(--transition-delay);
+
+  &.s {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.m {
+    width: 32px;
+    height: 32px;
+  }
+
+  &.l {
+    width: 44px;
+    height: 44px;
+  }
+
+  &.bgInverted {
+    fill: var(--bg-color-inverted)
+  }
 
   &.accented {
     fill: var(--accented-color);
+  }
 
+  &.clear.link:hover {
+    transform: scale(1.12);
   }
 }
