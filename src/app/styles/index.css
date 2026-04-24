@@ -14,4 +14,5 @@ body, .app {
   min-height: 100vh;
   min-width: var(--min-width);
   width: 100%;
+  
 }

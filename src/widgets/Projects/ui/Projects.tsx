@@ -4,18 +4,21 @@ import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppLink } from "@/shared/ui/AppLink/AppLink"
+import { useLocation } from "react-router"
 
 // import ProjectPhoto from "@/shared/assets/images/projects/project-2.png"
+
 
 
 interface ProjectsProps {
   className?: string
 }
 
-
 export const Projects = (
   { className }: ProjectsProps
 ) => {
+  const { pathname } = useLocation();
+
   return (
     <AppContainer className={cn(s.projects, className)}>
       <AppTitle title={"Projects"} className={s.title} />
@@ -41,10 +44,13 @@ export const Projects = (
             </div>
           </div>
         ))}
-
       </div>
-      <AppLink className={s.more} to={"/projects"}>{"See more >>"}</AppLink>
+      {pathname !== "/projects" ?
 
+
+        <AppLink className={s.more} to={"/projects"}>{"See more >>"}</AppLink>
+
+        : null}
 
     </AppContainer>
   )

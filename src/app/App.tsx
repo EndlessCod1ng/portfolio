@@ -5,6 +5,7 @@ import { Header } from "@/widgets/Header"
 import { Socials } from "@/widgets/Socials"
 import { Route, Routes } from "react-router"
 import { useTheme } from "./providers/ThemeProvider"
+import { ScrollToTop } from "@/shared/ui/ScrollToTop/ScrollToTop"
 
 interface AppProps {
   className?: string
@@ -21,6 +22,7 @@ export const App = (
       {/* <Socials /> */}
 
       <main>
+        <ScrollToTop />
         <Routes>
           <Route element={
             <HomePage />} path="/" />
