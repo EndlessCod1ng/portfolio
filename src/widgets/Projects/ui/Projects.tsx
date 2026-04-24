@@ -34,7 +34,8 @@ export const Projects = (
             <div className={s.info}>
               <AppTitle TagName="h4" title={p.title} />
               <div className={s.links}>
-                <AppLink size="s" to='/' variant="filled">{"Live Preview"}</AppLink>
+                <AppLink size="s" to='https://github.com/EndlessCod1ng/portfolio'
+                  target="_blank" variant="filled">{"Live Preview"}</AppLink>
                 <AppLink to='/'>{"View Code"}</AppLink>
               </div>
             </div>

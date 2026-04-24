@@ -3,7 +3,7 @@
   cursor: pointer;
   transition: all linear var(--transition-delay);
   text-decoration: none;
-  font: var(--font-sm);
+  font: var(--font-md);
   text-align: center;
 
   &.clear {
@@ -23,7 +23,7 @@
 
   &.primary.filled {
     border: 3px solid var(--accented-color);
-    color: var(--primary-color);
+    color: white;
     background: var(--accented-color);
 
     &.m {
@@ -38,13 +38,8 @@
 
     &:hover {
       color: var(--accented-color);
-      background: var(--bg-color);
+      background-color: white;
     }
   }
-
-
-  // &.primaryInverted {
-  //   color: var(--primary-color-inverted);
-  // }
 
 }

@@ -17,7 +17,7 @@ export const Footer = (
     <footer className={cn(s.footer, className)}>
       {/* <div className={s["wave-box"]}></div> */}
 
-      <div className={s.socials}>
+      <div className={s.footerSocials}>
         {[Instagram, Whatsapp, Telegram].map((item, i) => (< AppIcon Svg={item} key={i} className={s.item} size="m"
           functional="link"
           href="/"

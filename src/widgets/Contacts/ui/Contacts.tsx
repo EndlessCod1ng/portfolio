@@ -11,6 +11,7 @@ import Email from "@/shared/assets/images/contacts/email.svg?react"
 
 import cn from "classnames"
 import s from "./Contacts.module.scss"
+import { AppTextarea } from "@/shared/ui/AppTextarea/AppTextarea"
 
 interface ContactsProps {
   className?: string
@@ -28,7 +29,7 @@ export const Contacts = (
             <AppInput placeholder="E-mail" />
             <AppInput placeholder="Phone" />
           </div>
-          <AppInput placeholder="Message " />
+          <AppTextarea placeholder="Message " />
           <AppButton className={s.btn} variant="filled">{"Send"}</AppButton>
         </form>
 
@@ -42,7 +43,7 @@ export const Contacts = (
             ].map(infoItem => (<div key={infoItem.title} className={s.item}>
               <AppIcon Svg={infoItem.icon} size="l"
                 colorType="accented"
-    
+
               />
               <div className={s.text}>
                 <AppTitle TagName="h4" title={infoItem.title} />

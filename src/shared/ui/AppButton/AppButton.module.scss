@@ -1,7 +1,7 @@
 .appButton {
   cursor: pointer;
   transition: all linear var(--transition-delay);
-  font: var(--font-sm);
+  font: var(--font-md);
 
 
   &.primary.clear {
@@ -17,7 +17,7 @@
 
   &.primary.filled {
     border: 3px solid var(--accented-color);
-    color: var(--primary-color);
+    color: white;
     background: var(--accented-color);
 
     padding: 4px 24px;
@@ -25,14 +25,14 @@
 
     &:hover {
       color: var(--accented-color);
-      background: var(--bg-color-inverted);
+      background: white;
     }
   }
 
   &.primary.outlined {
     font: var(--font-md);
 
-    border: 3px solid var(--button-outlined-color);
+    border: 3px solid var(--bg-color-accented);
     background: var(--bg-color);
     color: var(--bg-color-inverted);
 
@@ -47,6 +47,7 @@
       transition: all linear var(--transition-delay);
       border: 3px solid var(--bg-color-accented);
       background: var(--bg-color-accented);
+      color: white;
     }
   }
 }
