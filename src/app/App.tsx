@@ -2,7 +2,7 @@ import { HomePage } from "@/pages/HomePage"
 import { routeConfig } from "@/shared/config/routeConfig"
 import { Footer } from "@/widgets/Footer/ui/Footer"
 import { Header } from "@/widgets/Header"
-import { Socials } from "@/widgets/Socials"
+// import { Socials } from "@/widgets/Socials"
 import { Route, Routes } from "react-router"
 import { useTheme } from "./providers/ThemeProvider"
 import { ScrollToTop } from "@/shared/ui/ScrollToTop/ScrollToTop"
@@ -20,7 +20,6 @@ export const App = (
     `}>
       <Header />
       {/* <Socials /> */}
-
       <main>
         <ScrollToTop />
         <Routes>
