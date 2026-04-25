@@ -1,0 +1,1 @@
+import{l as e}from"./AppButton-BiSJwx3R.js";import{r as t,t as n}from"./Projects-CZObt8Hz.js";var r=e(),i=({className:e})=>(0,r.jsx)(t,{className:e,children:(0,r.jsx)(n,{})});export{i as default};
