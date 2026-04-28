@@ -6,8 +6,8 @@ import type { PathType } from "@/shared/config/routeConfig"
 
 type AppLinkVariant = "clear" | "filled"
 type AppLinkColorType = "primary" | "primaryInverted"
-type AppLinkSize = "s" | "m"
-type AppLinkTo = PathType 
+type AppLinkSize = "s" | "m" | "withoutSize"
+type AppLinkTo = PathType
 
 interface AppLinkProps extends Omit<LinkProps, "to"> {
   children: ReactNode
@@ -18,7 +18,7 @@ interface AppLinkProps extends Omit<LinkProps, "to"> {
   className?: string
 }
 export const AppLink = (
-  { children, to = "/", variant = "clear", colorType = "primary", size = "m", className, ...otherProps }: AppLinkProps
+  { children, to = "/", variant = "clear", colorType = "primary", size = "withoutSize", className, ...otherProps }: AppLinkProps
 ) => {
   return (
     <Link {...otherProps} to={to} className={cn(s.appLink, s[variant], s[colorType], s[size], className)}>

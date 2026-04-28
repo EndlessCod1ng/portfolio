@@ -44,9 +44,9 @@ export const Banner = (
             } TagName="h1" />
             <AppText TagName="p" text={t("I offer frontend/backend website and application development services of any complexity.")} />
             <div className={s.btns}>
-              <AppLink variant="filled" to={PATHS.PROJECTS}>{t("See projects")}</AppLink>
+              <AppLink size="m" variant="filled" to={PATHS.PROJECTS}>{t("See projects")}</AppLink>
 
-              <AppLink to={PATHS.PROJECTS} >{t("See Resume")}</AppLink>
+              <AppLink size="m" to={PATHS.PROJECTS} >{t("See Resume")}</AppLink>
 
             </div>
           </div>

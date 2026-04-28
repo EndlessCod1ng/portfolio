@@ -1,4 +1,3 @@
-import { HomePage } from "@/pages/HomePage"
 import { routeConfig } from "@/shared/config/routeConfig"
 import { Footer } from "@/widgets/Footer/ui/Footer"
 import { Header } from "@/widgets/Header"
@@ -6,6 +5,7 @@ import { Header } from "@/widgets/Header"
 import { Route, Routes } from "react-router"
 import { useTheme } from "./providers/ThemeProvider"
 import { ScrollToTop } from "@/shared/ui/ScrollToTop/ScrollToTop"
+import { NotFoundPage } from "@/pages/NotFoundPage"
 
 interface AppProps {
   className?: string
@@ -23,9 +23,8 @@ export const App = (
       <main>
         <ScrollToTop />
         <Routes>
-          <Route element={
-            <HomePage />} path="/" />
           {routeConfig.map(r => (<Route element={r.element} path={r.path} />))}
+          <Route/>
         </Routes>
       </main>
       <Footer />

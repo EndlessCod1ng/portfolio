@@ -1,4 +1,4 @@
-import { routeConfig } from "@/shared/config/routeConfig"
+import { navRouteConfig } from "@/shared/config/routeConfig"
 import { AppLogo } from "@/shared/ui/AppLogo/AppLogo"
 import { AppLink } from "@/shared/ui/AppLink/AppLink"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
@@ -37,7 +37,7 @@ export const Header = (
             </AppButton>
             <ul
               className={cn(s.list, { [s.isVisible]: isVisible })}>
-              {routeConfig.map(r => <li key={r.name}>
+              {navRouteConfig.map(r => <li key={r.name}>
                 <AppLink size="s" onClick={() => { setIsVisible(false) }} to={r.path}>{t(`${r.name}`)}</AppLink>
               </li>)}
             </ul>

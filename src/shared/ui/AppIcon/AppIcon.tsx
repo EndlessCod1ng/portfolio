@@ -19,19 +19,14 @@ interface AppIconProps {
 export const AppIcon = (
   { Svg, colorType = "clear", size = "s", functional = "none", href = "", className, ...otherProps }: AppIconProps
 ) => {
+  const content = (<Svg
+    {...otherProps}
+    className={cn(s.appIcon, s[colorType], s[size], s.link, className)} />)
 
   return (
     functional === "link" ? (
       <AppLink to={href}>
-        <Svg
-          {...otherProps}
-          className={cn(s.appIcon, s[colorType], s[size],s.link, className)} />
+        {content}
       </AppLink>
-    ) :
-      (
-        <Svg
-          {...otherProps}
-          className={cn(s.appIcon, s[colorType], s[size], className)} />
-      )
-  )
+    ) : content)
 }

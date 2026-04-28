@@ -65,15 +65,15 @@ export const Stack = (
         </div>))}
 
       </div>
-      <div className={s.icons}>
-        {Object.entries(BannerIcons).map(([name, Icon]) => (
+      {/* <div className={s.icons}>
+        {Object.entries(BannerIcons).map(([_, Icon], i) => (
           <AppIcon
-            key={name}
+            key={i}
             Svg={Icon}
             size="l"
           />
         ))}
-      </div>
+      </div> */}
     </AppContainer>
   )
 }
