@@ -1,0 +1,1 @@
+import{l as e}from"./useTranslation-B0K4umuX.js";import{n as t}from"./AppTitle-D5Lk3SS6.js";import{t as n}from"./Projects-Dov7EA-X.js";var r=e(),i=({className:e})=>(0,r.jsx)(t,{className:e,children:(0,r.jsx)(n,{})});export{i as default};
