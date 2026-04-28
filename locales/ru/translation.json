@@ -1,3 +1,13 @@
 {
-  "Logo":"Лого"
+  "Page not found":"Страница не найдена",
+  "Logo":"Logo",
+  "Home":"Главная",
+  "Projects":"Проекты",
+  "About":"О проекте",
+  "Hi, I'm":"Привет, Я",
+  "Viacheslav":"Вячеслав",
+  "Developer":"Разработчик",
+  "I offer frontend/backend website and application development services of any complexity.":"Предлагаю услуги frontend/backend разработки сайтов и приложений любого уровня сложности",
+  "See projects":"К проектам",
+  "See Resume":"Резюме"
 }
