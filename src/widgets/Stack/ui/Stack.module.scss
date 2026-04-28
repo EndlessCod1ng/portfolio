@@ -1,6 +1,5 @@
 .stack {
   padding-top: var(--sections-indent);
-  padding-bottom: var(--sections-indent);
 }
 
 .title {
@@ -8,16 +7,34 @@
 }
 
 .icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto 0;
+  // justify-content: center;
+  // align-items: center;
+  place-items: center;
+  row-gap: 50px;
+
+}
+
+.icon {
+  // width: 60%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+}
+
+.images {
   display: flex;
   justify-content: center;
 
   flex-wrap: wrap;
   gap: 13px;
-
   padding: 40px 0 0;
 }
 
-.iconWrapper {
+.imageWrapper {
   background: var(--bg-color-accented);
   width: 45%;
   height: 90px;
@@ -30,12 +47,21 @@
   text-align: center;
 
   padding-top: 20px;
-  margin: 30px 0 0;
+  margin: 36px 0 0;
 }
 
-.icon {
+.image {
   position: absolute;
   top: -45%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media(min-width:1024px) {
+  .appIcon {
+    &.xl {
+      width: 114px;
+      height: 114px;
+    }
+  }
 }

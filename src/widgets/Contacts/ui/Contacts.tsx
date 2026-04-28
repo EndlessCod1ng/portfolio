@@ -40,7 +40,7 @@ export const Contacts = (
             [
               { icon: Location, title: t("Location"), text: t("USA/Sacramento") },
               { icon: Phone, title: t("Phone"), text: "+989150063913" },
-              { icon: Email, title: "Email", text: "endlesscoding@yahoo.com" },
+              { icon: Email, title: t("Email"), text: "endlesscoding@yahoo.com" },
 
             ].map(infoItem => (<div key={infoItem.title} className={s.item}>
               <AppIcon Svg={infoItem.icon} size="l"

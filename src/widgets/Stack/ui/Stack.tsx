@@ -61,20 +61,23 @@ export const Stack = (
     <AppContainer className={cn(s.stack, className)}>
       <AppTitle title={t("Stack")} className={s.title} />
       <div className={s.icons}>
-        {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
-          <AppTitle TagName="h4" title={image.text} />
-          <img className={s.icon} src={image.img} />
-        </div>))}
-
-      </div>
-      <div className={s.icons}>
         {Object.entries(BannerIcons).map(([name, Icon]) => (<AppIcon
           key={name}
           Svg={Icon}
-          size="l"
+          size="xl"
+          className={s.icon}
         />
         ))}
       </div>
+
+      <div className={s.images}>
+        {images.map((img, i) => (<div key={i} className={s.imageWrapper}>
+          <AppTitle TagName="h4" title={img.text} />
+          <img className={s.image} src={img.img} />
+        </div>))}
+
+      </div>
+
     </AppContainer>
   )
 }

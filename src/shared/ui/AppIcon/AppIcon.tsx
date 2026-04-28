@@ -4,7 +4,7 @@ import type { FC, SVGProps } from "react"
 import { AppLink } from "../AppLink/AppLink"
 
 type AppIconColorType = "clear" | "accented" | "invertedBg"
-type AppIconSize = "s" | "m" | "l"
+type AppIconSize = "s" | "m" | "l" | "xl"
 // type AppIconFunctional = "none" | "link" | "button"
 type AppIconFunctional = "none" | "link"
 

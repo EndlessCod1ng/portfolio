@@ -16,6 +16,11 @@
     height: 44px;
   }
 
+  &.xl {
+    width: 60px;
+    height: 60px;
+  }
+
   &.bgInverted {
     fill: var(--bg-color-inverted)
   }
@@ -26,5 +31,23 @@
 
   &.clear.link:hover {
     transform: scale(1.12);
+  }
+}
+
+@media(min-width:768px) {
+  .appIcon {
+    &.xl {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media(min-width:1024px) {
+  .appIcon {
+    &.xl {
+      width: 114px;
+      height: 114px;
+    }
   }
 }
