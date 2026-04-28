@@ -2,7 +2,6 @@ import cn from "classnames"
 import s from "./Banner.module.scss"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import { AppLink } from "@/shared/ui/AppLink/AppLink"
-import { AppButton } from "@/shared/ui/AppButton/AppButton"
 import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 
 import Photo from "@/shared/assets/images/banner/photo.jpg"
@@ -39,9 +38,14 @@ export const Banner = (
               <AppTitle title={t("Hi, I'm")} TagName="h2" />
               <AppTitle title={t("Viacheslav")} TagName="h2" colorType="accented" />
             </div>
-            <AppTitle title={
-              `Frontend ${t("Developer")}`
-            } TagName="h1" />
+            <div className={s.prof}>
+              <AppTitle title={
+                `Frontend`
+              } TagName="h1" />
+              <AppTitle title={
+                `${t("Developer")}`
+              } TagName="h1" />
+            </div>
             <AppText TagName="p" text={t("I offer frontend/backend website and application development services of any complexity.")} />
             <div className={s.btns}>
               <AppLink size="m" variant="filled" to={PATHS.PROJECTS}>{t("See projects")}</AppLink>

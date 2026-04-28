@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 export const PATHS = {
   HOME: "/",
   PROJECTS: "/projects",
-  ABOUT: "/about",
+  RESUME: "/resume",
   NOT_FOUND: "*",
 } as const;
 
@@ -16,7 +16,7 @@ export type PathType = (typeof PATHS)[keyof typeof PATHS] | (string & {});
 export const navRouteConfig: Array<{ name: string, path: PathType, element: ReactNode }> = [
   { name: "Home", path: PATHS.HOME, element: <HomePage /> },
   { name: "Projects", path: PATHS.PROJECTS, element: <ProjectsPage /> },
-  { name: "About", path: PATHS.ABOUT, element: <ProjectsPage /> }
+  { name: "Resume", path: PATHS.RESUME, element: <ProjectsPage /> }
 ]
 export const routeConfig: Array<{ name: string, path: PathType, element: ReactNode }> = [
   ...navRouteConfig,

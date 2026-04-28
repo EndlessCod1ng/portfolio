@@ -5,8 +5,6 @@ import { Header } from "@/widgets/Header"
 import { Route, Routes } from "react-router"
 import { useTheme } from "./providers/ThemeProvider"
 import { ScrollToTop } from "@/shared/ui/ScrollToTop/ScrollToTop"
-import { NotFoundPage } from "@/pages/NotFoundPage"
-
 interface AppProps {
   className?: string
 }

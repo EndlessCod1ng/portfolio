@@ -1,15 +1,17 @@
-import cn from "classnames"
-import s from "./Stack.module.scss"
+import type { FC, SVGProps } from "react";
+
+import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
+import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
+import { AppIcon } from "@/shared/ui/AppIcon/AppIcon"
 
 import Ae from "@/shared/assets/images/banner/ae.png"
 import Ai from "@/shared/assets/images/banner/ai.png"
 import F from "@/shared/assets/images/banner/f.png"
 import Ps from "@/shared/assets/images/banner/ps.png"
-import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
-import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
-import { AppIcon } from "@/shared/ui/AppIcon/AppIcon"
 
-import type { FC, SVGProps } from "react";
+import cn from "classnames"
+import s from "./Stack.module.scss"
+import { useTranslation } from "react-i18next";
 
 type SvgComponent = FC<SVGProps<SVGSVGElement>>;
 
@@ -54,10 +56,10 @@ const images = [
 export const Stack = (
   { className }: StackProps
 ) => {
-
+  const { t } = useTranslation()
   return (
     <AppContainer className={cn(s.stack, className)}>
-      <AppTitle title={"Stack"} className={s.title} />
+      <AppTitle title={t("Stack")} className={s.title} />
       <div className={s.icons}>
         {images.map((image, i) => (<div key={i} className={s.iconWrapper}>
           <AppTitle TagName="h4" title={image.text} />
@@ -65,15 +67,14 @@ export const Stack = (
         </div>))}
 
       </div>
-      {/* <div className={s.icons}>
-        {Object.entries(BannerIcons).map(([_, Icon], i) => (
-          <AppIcon
-            key={i}
-            Svg={Icon}
-            size="l"
-          />
+      <div className={s.icons}>
+        {Object.entries(BannerIcons).map(([name, Icon]) => (<AppIcon
+          key={name}
+          Svg={Icon}
+          size="l"
+        />
         ))}
-      </div> */}
+      </div>
     </AppContainer>
   )
 }

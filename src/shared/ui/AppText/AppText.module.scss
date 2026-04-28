@@ -1,3 +1,9 @@
 .appText {
-  font: var(--font-xs);
+  font: var(--font-sm);
+}
+
+@media(min-width:768px) {
+  .appText {
+    font: var(--font-md);
+  }
 }
