@@ -21,7 +21,7 @@ export const Header = (
   const { theme, changeTheme } = useTheme();
   const [isVisible, setIsVisible] = useState<boolean>(false)
   useBodyScrollLock(isVisible)
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <header className={`${s.header} ${className ? className : ""}`}>
@@ -38,7 +38,7 @@ export const Header = (
             <ul
               className={cn(s.list, { [s.isVisible]: isVisible })}>
               {routeConfig.map(r => <li key={r.name}>
-                <AppLink onClick={() => { setIsVisible(false) }} to={r.path}>{r.name}</AppLink>
+                <AppLink size="s" onClick={() => { setIsVisible(false) }} to={r.path}>{t(`${r.name}`)}</AppLink>
               </li>)}
             </ul>
           </nav>

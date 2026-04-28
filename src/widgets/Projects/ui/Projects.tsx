@@ -46,8 +46,6 @@ export const Projects = (
         ))}
       </div>
       {pathname !== "/projects" ?
-
-
         <AppLink className={s.more} to={"/projects"}>{"See more >>"}</AppLink>
 
         : null}

@@ -7,6 +7,8 @@ import { AppTitle } from "@/shared/ui/AppTitle/AppTitle"
 
 import Photo from "@/shared/assets/images/banner/photo.jpg"
 import { AppText } from "@/shared/ui/AppText/AppText"
+import { useTranslation } from "react-i18next"
+import { PATHS } from "@/shared/config/routeConfig"
 
 
 interface BannerProps {
@@ -16,6 +18,8 @@ interface BannerProps {
 export const Banner = (
   { className }: BannerProps
 ) => {
+  const { t } = useTranslation();
+
   return (
     <section className={cn(s.banner, className)}>
       <div className={s.bannerBg}></div>
@@ -32,15 +36,17 @@ export const Banner = (
 
           <div className={s.info}>
             <div className={s.name}>
-              <AppTitle title="I'm" TagName="h2" />
-              <AppTitle title="Viacheslav" TagName="h2" colorType="accented" />
+              <AppTitle title={t("Hi, I'm")} TagName="h2" />
+              <AppTitle title={t("Viacheslav")} TagName="h2" colorType="accented" />
             </div>
-            <AppTitle title="Frontend Developer" TagName="h1" />
-            <AppText TagName="p" text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia asperiores libero ut accusantium obcaecati quam aut nobis debitis sint sunt." />
+            <AppTitle title={
+              `Frontend ${t("Developer")}`
+            } TagName="h1" />
+            <AppText TagName="p" text={t("I offer frontend/backend website and application development services of any complexity.")} />
             <div className={s.btns}>
-              <AppLink variant="filled" to='/'>{"See projects"}</AppLink>
+              <AppLink variant="filled" to={PATHS.PROJECTS}>{t("See projects")}</AppLink>
 
-              <AppButton>{"See Download Resume"}</AppButton>
+              <AppLink to={PATHS.PROJECTS} >{t("See Resume")}</AppLink>
 
             </div>
           </div>

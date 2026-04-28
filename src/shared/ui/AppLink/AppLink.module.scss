@@ -4,13 +4,14 @@
   transition: all linear var(--transition-delay);
   text-decoration: none;
   font: var(--font-md);
-  text-align: center;
+  width: max-content;
 
   &.clear {
     outline: none;
     border: none;
     text-decoration: none;
     background: none;
+    padding: 8px 12px;
   }
 
   &.primary.clear {
@@ -27,12 +28,10 @@
     background: var(--accented-color);
 
     &.m {
-      padding: 15px 36px;
       border-radius: var(--border-radius-s);
     }
 
     &.s {
-      padding: 5px 10px;
       border-radius: var(--border-radius-xs);
     }
 
@@ -42,4 +41,11 @@
     }
   }
 
+    &.m {
+      padding: 15px 36px;
+    }
+  
+    &.s {
+      padding: 5px 10px;
+    }
 }

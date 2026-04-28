@@ -9,7 +9,7 @@ import '@/shared/config/i18n';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename="/portfolio/">
       <ThemeProvider>
         <Suspense fallback={<div>{"Loading"}</div>}>
           <App />
