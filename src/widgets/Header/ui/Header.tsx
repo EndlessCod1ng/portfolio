@@ -1,6 +1,6 @@
 import { navRouteConfig } from "@/shared/config/routeConfig"
 import { AppLogo } from "@/shared/ui/AppLogo/AppLogo"
-import { AppLink } from "@/shared/ui/AppLink/AppLink"
+import { AppNavLink } from "@/shared/ui/AppNavLink/AppNavLink"
 import { AppContainer } from "@/shared/ui/AppContainer/AppContainer"
 import s from "./Header.module.scss"
 import { useState } from "react"
@@ -38,7 +38,7 @@ export const Header = (
             <ul
               className={cn(s.list, { [s.isVisible]: isVisible })}>
               {navRouteConfig.map(r => <li key={r.name}>
-                <AppLink size="s" onClick={() => { setIsVisible(false) }} to={r.path}>{t(`${r.name}`)}</AppLink>
+                <AppNavLink onClick={() => { setIsVisible(false) }} to={r.path}>{t(`${r.name}`)}</AppNavLink>
               </li>)}
             </ul>
           </nav>

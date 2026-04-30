@@ -1,5 +1,4 @@
 .contacts {
-  padding: var(--sections-indent) 0;
   display: flex;
   flex-direction: column;
   gap: 75px;
@@ -20,8 +19,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
- 
   border-radius: var(--border-radius-xs);
 }
 
