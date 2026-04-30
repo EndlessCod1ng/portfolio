@@ -1,0 +1,1 @@
+import{u as e}from"./AppLink-Bfi3ZMiO.js";import{n as t}from"./AppTitle-CxdilHvG.js";import{t as n}from"./Projects-CaOi5cNR.js";var r=e(),i=({className:e})=>(0,r.jsx)(t,{className:e,children:(0,r.jsx)(n,{})});export{i as default};

@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-B3K2TuZy.js";import{l as t,u as n}from"./AppLink-Bfi3ZMiO.js";import{n as r}from"./AppTitle-CxdilHvG.js";import{t as i}from"./Contacts-CmhJzG2A.js";var a=e(t(),1),o={contactsPage:`_contactsPage_1uqss_1`},s=n(),c=({className:e})=>(0,s.jsx)(r,{className:(0,a.default)(o.contactsPage,e),children:(0,s.jsx)(i,{})});export{c as default};
