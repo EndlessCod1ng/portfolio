@@ -15,7 +15,6 @@ const HomePage = (
       <Banner />
       <Stack />
       <Projects />
-      
       <Contacts />
     </Page>
   )

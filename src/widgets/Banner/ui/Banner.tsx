@@ -50,7 +50,7 @@ export const Banner = (
             <div className={s.btns}>
               <AppLink size="m" variant="filled" to={PATHS.PROJECTS}>{t("See projects")}</AppLink>
 
-              <AppLink size="m" to={PATHS.PROJECTS} >{t("See Resume")}</AppLink>
+              <AppLink size="m" to={PATHS.CONTACTS} >{t("Contacts")}</AppLink>
 
             </div>
           </div>

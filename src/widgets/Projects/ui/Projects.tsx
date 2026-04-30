@@ -39,7 +39,7 @@ export const Projects = (
             <div className={s.info}>
               <AppTitle TagName="h4" title={p.title} />
               <div className={s.links}>
-                <AppLink size="s" to='https://github.com/EndlessCod1ng/portfolio'
+                <AppLink size="s" to='https://endlesscod1ng.github.io/portfolio/'
                   target="_blank" variant="filled">{t("Live Preview")}</AppLink>
                 <AppLink to='https://github.com/EndlessCod1ng/portfolio' target="_blank">{t("Code")}</AppLink>
               </div>

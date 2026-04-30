@@ -3,7 +3,8 @@
   --bg-color: #222;
   --bg-color-inverted: #fff;
   --bg-color-accented: rgba(36, 51, 92, 1);
-  --bg-color-accented-inverted: rgba(166, 188, 250, 1);
+  --bg-color-unaccented: rgba(53, 53, 53, 1);
+
 
   // Header
   --header-bg-color: rgb(34, 34, 34, 0.9);
@@ -13,8 +14,4 @@
   --secondary-color: #aaa;
   --primary-color-inverted: #222;
   --accented-color: rgba(33, 87, 242, 1);
-
-
-  --card-bg: rgba(53, 53, 53, 1);
-  --field-bg: rgba(57, 56, 56, 1);
 }

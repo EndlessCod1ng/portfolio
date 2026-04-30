@@ -1,5 +1,8 @@
 .contacts {
   padding: var(--sections-indent) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
 }
 
 .container {
@@ -18,8 +21,7 @@
   flex-direction: column;
   gap: 20px;
 
-  // box-shadow: 8px 8px 34px 0px var(--card-bg);
-  // padding: 50px;
+ 
   border-radius: var(--border-radius-xs);
 }
 
@@ -54,6 +56,11 @@
   fill: var(--accented-color);
   width: 72px;
   height: 72px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width:992px) {

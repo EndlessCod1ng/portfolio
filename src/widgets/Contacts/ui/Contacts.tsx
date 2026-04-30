@@ -14,6 +14,11 @@ import s from "./Contacts.module.scss"
 import { AppTextarea } from "@/shared/ui/AppTextarea/AppTextarea"
 import { useTranslation } from "react-i18next"
 
+import Instagram from "@/shared/assets/images/footer/instagram.svg?react"
+import Whatsapp from "@/shared/assets/images/footer/whatsapp.svg?react"
+import Telegram from "@/shared/assets/images/footer/telegram.svg?react"
+
+
 interface ContactsProps {
   className?: string
 }
@@ -55,8 +60,13 @@ export const Contacts = (
           }
 
         </div>
-
       </AppContainer>
+      <div className={s.socials}>
+        {[Instagram, Whatsapp, Telegram].map((item, i) => (< AppIcon Svg={item} key={i} className={s.item} size="m"
+          functional="link"
+          href="/"
+        />))}
+      </div>
     </section>
   )
 }

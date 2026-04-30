@@ -83,7 +83,7 @@
 
 .imgWrapper {
   border-radius: 50%;
-  border: 10px solid var(--bg-color-inverted);
+  border: 10px solid white;
   display: inline-block;
 }
 
@@ -138,7 +138,7 @@
 
 @media (min-width:768px) {
   .imgWrapper {
-    border: 15px solid var(--bg-color-inverted);
+    border: 15px solid white;
   }
 
   .img {
@@ -158,11 +158,11 @@
   }
 
   .imgWrapper {
-    border: 20px solid var(--bg-color-inverted);
+    border: 20px solid white;
   }
 
   .img {
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
   }
 }
